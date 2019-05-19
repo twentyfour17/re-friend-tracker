@@ -86,6 +86,20 @@ export class GuiModel {
                             "width": 2,
                             "required": true
                         }, 
+                        {
+                            "id": "groupCreationDate",
+                            "type": "date",
+                            "name": "GroupCreationDate",
+                            "width": 2
+                        },
+                        {
+                            "id": "groupComment",
+                            "type": "text",
+                            "name": "GroupComments",
+                            "width": 2,
+                            "height": 4,
+                            "maxLength": 5000,
+                        },
                         { 
                             "type": "deleteButton",
                             "name": "Delete"
@@ -118,6 +132,12 @@ export class GuiModel {
                             "form": "LocationForm",
                             "width": 2 
                         },
+                        {
+                            "id": "activityDate",
+                            "type": "date",
+                            "name": "ActivityDate",
+                            "width": 2
+                        },
                         { 
                             "type": "deleteButton",
                             "name": "Delete"
@@ -143,6 +163,14 @@ export class GuiModel {
                             "name": "LocationName",
                             "width": 2,
                             "required": true
+                        },
+                        {
+                            "id": "locationComment",
+                            "type": "text",
+                            "name": "LocationComments",
+                            "width": 2,
+                            "height": 4,
+                            "maxLength": 5000,
                         },
                         {
                             "type": "deleteButton",
@@ -287,7 +315,7 @@ export class GuiModel {
                             "type": "backbutton",
                         },
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "EditFriend",
                             "icon": "fa-user",
                             "color": "green",
@@ -403,7 +431,7 @@ export class GuiModel {
                             "type": "backbutton", 
                         },
                         { 
-                            "type": "newButton",
+                            "type": "button",
                             "name": "EditActivity",
                             "icon": "fa-weixin",
                             "color": "green",
